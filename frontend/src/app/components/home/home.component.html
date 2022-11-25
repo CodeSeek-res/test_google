@@ -1,0 +1,20 @@
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <td>E-mail</td>
+        <td>Name</td>
+        <td>Phone Number</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userContact of userContacts; let i = index;">
+        <th scope="row">{{i}}</th>
+        <td>{{userContact.email}}</td>
+        <td>{{userContact.name}}</td>
+        <td>{{userContact.phoneNumber}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
